@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply font-sans bg-background text-primary selection:bg-selection selection:text-primary;
+    @apply font-sans bg-white text-primary selection:bg-selection selection:text-primary;
     /* Removed: dark:bg-darkBackground dark:text-darkPrimary */
   }
 

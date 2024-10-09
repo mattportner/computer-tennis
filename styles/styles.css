@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans bg-background text-primary selection:bg-selection selection:text-primary;
+    /* Removed: dark:bg-darkBackground dark:text-darkPrimary */
+  }
+
+  h1 {
+    @apply font-medium;
+    font-size: 20px;
+  }
+  h2 {
+    @apply font-medium;
+  }
+
+  h3 {
+    @apply font-medium text-tertiary;
+    /* Removed: dark:text-darkTertiary */
+  }
+
+  p {
+    @apply text-secondary;
+    /* Removed: dark:text-darkSecondary */
+  }
+
+  a {
+    @apply underline transition duration-300 ease-in-out text-secondary;
+    /* Removed: dark:underline-dark dark:text-darkSecondary */
+  }
+  a:hover {
+    @apply underline transition duration-300 ease-in-out text-primary;
+    /* Removed: dark:underline-dark dark:text-darkPrimary */
+  }
+
+  ul {
+    @apply my-2 ml-4 list-disc list-inside text-secondary;
+    /* Removed: dark:text-darkSecondary */
+  }
+
+  code {
+    @apply px-1 py-0.5 bg-code rounded-sm text-sm;
+    /* Removed: dark:bg-darkCode */
+  }
+}
+
+@layer utilities {
+  .underline {
+    text-decoration-color: rgba(0, 0, 0, 0.1);
+  }
+  /* Removed .underline-dark class */
+}
